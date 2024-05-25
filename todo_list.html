@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: white;
+            width: 60%;
+            min-height: 200px;
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 15px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            background-color: #f9f9f9;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 4px solid #333;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            float: right;
+            background-color: #ff0b0b;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            cursor: pointer;
+        }
+
+
+        input[type="text"] {
+            width: 70%;
+            padding: 13 px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+            outline: none;
+        }
+
+        .btn1 {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn1:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-do list</h1>
+        <input type="text" placeholder="add task">
+        <button class="btn1">Add Task</button>
+
+        <ul>
+            <li>
+                Eat Food
+                <button class="btn">&#10005;</button>
+            </li>
+        </ul>
+    </div>
+    <script src="script_todo.js"></script>
+</body>
+
+</html>
